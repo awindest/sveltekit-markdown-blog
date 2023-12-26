@@ -1,0 +1,163 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "/about",
+			"dest": "/about/"
+		},
+		{
+			"src": "/about/",
+			"status": 308,
+			"headers": {
+				"Location": "/about"
+			}
+		},
+		{
+			"src": "/contact",
+			"dest": "/contact/"
+		},
+		{
+			"src": "/contact/",
+			"status": 308,
+			"headers": {
+				"Location": "/contact"
+			}
+		},
+		{
+			"src": "/munger-quotes",
+			"dest": "/munger-quotes/"
+		},
+		{
+			"src": "/munger-quotes/",
+			"status": 308,
+			"headers": {
+				"Location": "/munger-quotes"
+			}
+		},
+		{
+			"src": "/data-governancing",
+			"dest": "/data-governancing/"
+		},
+		{
+			"src": "/data-governancing/",
+			"status": 308,
+			"headers": {
+				"Location": "/data-governancing"
+			}
+		},
+		{
+			"src": "/pockethost-io",
+			"dest": "/pockethost-io/"
+		},
+		{
+			"src": "/pockethost-io/",
+			"status": 308,
+			"headers": {
+				"Location": "/pockethost-io"
+			}
+		},
+		{
+			"src": "/what-i-use",
+			"dest": "/what-i-use/"
+		},
+		{
+			"src": "/what-i-use/",
+			"status": 308,
+			"headers": {
+				"Location": "/what-i-use"
+			}
+		},
+		{
+			"src": "/second-post",
+			"dest": "/second-post/"
+		},
+		{
+			"src": "/second-post/",
+			"status": 308,
+			"headers": {
+				"Location": "/second-post"
+			}
+		},
+		{
+			"src": "/third-post",
+			"dest": "/third-post/"
+		},
+		{
+			"src": "/third-post/",
+			"status": 308,
+			"headers": {
+				"Location": "/third-post"
+			}
+		},
+		{
+			"src": "/the-fence",
+			"dest": "/the-fence/"
+		},
+		{
+			"src": "/the-fence/",
+			"status": 308,
+			"headers": {
+				"Location": "/the-fence"
+			}
+		},
+		{
+			"src": "/a-final-fling",
+			"dest": "/a-final-fling/"
+		},
+		{
+			"src": "/a-final-fling/",
+			"status": 308,
+			"headers": {
+				"Location": "/a-final-fling"
+			}
+		},
+		{
+			"src": "/_app/immutable/.+",
+			"headers": {
+				"cache-control": "public, immutable, max-age=31536000"
+			}
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "/.*",
+			"dest": "/fn"
+		}
+	],
+	"overrides": {
+		"index.html": {
+			"path": ""
+		},
+		"about.html": {
+			"path": "about"
+		},
+		"contact.html": {
+			"path": "contact"
+		},
+		"munger-quotes.html": {
+			"path": "munger-quotes"
+		},
+		"data-governancing.html": {
+			"path": "data-governancing"
+		},
+		"pockethost-io.html": {
+			"path": "pockethost-io"
+		},
+		"what-i-use.html": {
+			"path": "what-i-use"
+		},
+		"second-post.html": {
+			"path": "second-post"
+		},
+		"third-post.html": {
+			"path": "third-post"
+		},
+		"the-fence.html": {
+			"path": "the-fence"
+		},
+		"a-final-fling.html": {
+			"path": "a-final-fling"
+		}
+	}
+}

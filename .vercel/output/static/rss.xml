@@ -1,0 +1,73 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+			<channel>
+				<title>Indest Labs</title>
+				<description>SvelteKit blog for production - file based and vanilla javascripted</description>
+				<link>https://vercel.app</link>
+				<atom:link href="https://vercel.app/rss.xml" rel="self" type="application/rss+xml"/>
+				
+						<item>
+							<title>Quotes from the great Charlie Munger (RIP)</title>
+							<description>Here are some nuggets of wisdom.</description>
+							<link>https://vercel.app/munger-quotes</link>
+							<guid isPermaLink="true">https://vercel.app/munger-quotes</guid>
+							<pubDate>Tue, 26 Dec 2023 00:00:00 GMT</pubDate>
+						</item>
+					
+						<item>
+							<title>The Data Governance Story</title>
+							<description>An interesting 'splanation of modern governance.</description>
+							<link>https://vercel.app/data-governancing</link>
+							<guid isPermaLink="true">https://vercel.app/data-governancing</guid>
+							<pubDate>Wed, 13 Dec 2023 00:00:00 GMT</pubDate>
+						</item>
+					
+						<item>
+							<title>A Story about PocketHost.io</title>
+							<description>An interesting story about Ben Allfree, the person behind pockethost.io, a free pocketbase (as of today) cloud service.</description>
+							<link>https://vercel.app/pockethost-io</link>
+							<guid isPermaLink="true">https://vercel.app/pockethost-io</guid>
+							<pubDate>Sun, 10 Dec 2023 00:00:00 GMT</pubDate>
+						</item>
+					
+						<item>
+							<title>What I Use for Web Development</title>
+							<description>Here are the technologies that I use to create my web presence.</description>
+							<link>https://vercel.app/what-i-use</link>
+							<guid isPermaLink="true">https://vercel.app/what-i-use</guid>
+							<pubDate>Sun, 03 Dec 2023 05:00:00 GMT</pubDate>
+						</item>
+					
+						<item>
+							<title>Second</title>
+							<description>Second post.</description>
+							<link>https://vercel.app/second-post</link>
+							<guid isPermaLink="true">https://vercel.app/second-post</guid>
+							<pubDate>Sun, 16 Apr 2023 04:00:00 GMT</pubDate>
+						</item>
+					
+						<item>
+							<title>Third Post of the Wonderful World Wide Web!</title>
+							<description>Third post.</description>
+							<link>https://vercel.app/third-post</link>
+							<guid isPermaLink="true">https://vercel.app/third-post</guid>
+							<pubDate>Sun, 16 Apr 2023 04:00:00 GMT</pubDate>
+						</item>
+					
+						<item>
+							<title>The Fence</title>
+							<description>A tale about managing anger with a hammer.</description>
+							<link>https://vercel.app/the-fence</link>
+							<guid isPermaLink="true">https://vercel.app/the-fence</guid>
+							<pubDate>Thu, 05 Aug 1999 04:00:00 GMT</pubDate>
+						</item>
+					
+						<item>
+							<title>A Final Fling</title>
+							<description>A Florida Keys fantasy.</description>
+							<link>https://vercel.app/a-final-fling</link>
+							<guid isPermaLink="true">https://vercel.app/a-final-fling</guid>
+							<pubDate>Wed, 15 Apr 1987 04:00:00 GMT</pubDate>
+						</item>
+					
+			</channel>
+		</rss>
