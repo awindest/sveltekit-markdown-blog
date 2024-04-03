@@ -9,7 +9,7 @@
 		// data.posts.forEach(console.log(data.posts))
 		let d = Object.keys(data.posts) // change to an array so we can get the length to create an array of delays for the shimmer effect
 		len = d.length
-		console.log(d.length)
+		console.log(d.length, randomInt(1, len)())
 	}
 	randomArrayOfDelays()
 </script>
@@ -21,10 +21,12 @@
 <section>
 	<ul class="posts">
 		{#each data.posts as post}
-			<li class="post">
-				<a href={post.slug} class="title">{post.title}</a>
-				<p class="date">{formatDate(post.date)}</p>
-				<p class="description">{post.description}</p>
+			<li class="post glow-effect">
+				<a href={post.slug} class="title"
+					>{post.title}
+					<p class="date">{formatDate(post.date)}</p>
+					<p class="description">{post.description}</p>
+				</a>
 				<svg class="glow-container">
 					<rect pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
 					<rect pathLength="100" stroke-linecap="round" class="glow-line"></rect>
@@ -37,7 +39,6 @@
 
 <style>
 	.posts {
-		/* display: grid; */
 		display: flex;
 		flex-wrap: wrap;
 		gap: var(--size-7);
@@ -57,6 +58,7 @@
 		max-inline-size: var(--size-content-3);
 		padding: var(--size-2) var(--size-4);
 		width: 30%;
+		/* outline: 3px solid #ff0080; */
 	}
 	.post:before {
 		content: '';
@@ -70,7 +72,9 @@
 		filter: blur(5px);
 		width: calc(100% + 4px);
 		height: calc(100% + 4px);
-		animation: animate 20s linear infinite;
+		/* animation: animate 20s linear infinite; */
+		animation: gradient-background-anim 8s ease-in-out infinite;
+
 		opacity: 0;
 		transition: opacity 0.3s ease;
 	}
@@ -230,6 +234,7 @@
 	}
 	.title {
 		font-size: var(--font-size-fluid-3);
+		line-height: var(--font-lineheight-1);
 		text-transform: capitalize;
 	}
 
@@ -253,14 +258,16 @@
 		/* do not change, used for calculations */
 		--container-offset: 100px;
 		position: relative;
+		/* position: absolute; */
 	}
 
 	.glow-container {
 		pointer-events: none;
 		position: absolute;
-		inset: calc(var(--container-offset) / -2);
+		/* inset: calc(var(--container-offset) / -2); */
+		inset: 0;
 		width: calc(100% + var(--container-offset));
-		height: calc(100% + var(--container-offset));
+		height: calc(100%);
 		opacity: 0;
 		outline: 3px solid blue;
 	}
@@ -268,7 +275,7 @@
 	.glow-blur,
 	.glow-line {
 		width: calc(100% - var(--container-offset) + var(--glow-offset));
-		height: calc(100% - var(--container-offset) + var(--glow-offset));
+		height: calc(100%  - var(--container-offset) + var(--glow-offset));
 		x: calc((var(--container-offset) / 2) + calc(var(--glow-offset) / -2));
 		y: calc((var(--container-offset) / 2) + calc(var(--glow-offset) / -2));
 		fill: transparent;

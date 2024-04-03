@@ -8,6 +8,10 @@ categories:
 published: true
 ---
 
+<p align="center">
+  <img width="100%" src="pockethost.avif" title="PocketHost.io logo from web site"/>
+</p>
+
 ### Introduction
 
 Found on reddit:
