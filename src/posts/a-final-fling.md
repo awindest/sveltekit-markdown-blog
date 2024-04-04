@@ -8,7 +8,9 @@ categories:
 published: true
 ---
 
-
+<p align="center">
+  <img width="100%" src="keywestsunset.avif" title="Key West Sunset from Unsplash web site"/>
+</p>
 
 The sun glints off her wet, lower lip. Her hair is the golden brown you used to see in cigarette ads. I don't realize I'm staring until the other members of her table stare back at me. I quickly look down at the bubbles in my overpriced, champagne of bottle beer. I feel my face red as the wind brings their titters of laughter to my ears. "Damn, you're off to a great start!"
 
