@@ -12,6 +12,10 @@ published: true
   <img width="100%" src="pockethost.avif" title="PocketHost.io logo from web site"/>
 </p>
 
+### Update
+
+Well, they have begun charging, but not too much, for an instance of pocketbase. **sigh**
+
 ### Introduction
 
 Found on reddit:

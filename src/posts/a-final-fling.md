@@ -12,7 +12,7 @@ published: true
   <img width="100%" src="keywestsunset.avif" title="Key West Sunset from Unsplash web site"/>
 </p>
 
-The sun glints off her wet, lower lip. Her hair is the golden brown you used to see in cigarette ads. I don't realize I'm staring until the other members of her table stare back at me. I quickly look down at the bubbles in my overpriced, champagne of bottle beer. I feel my face red as the wind brings their titters of laughter to my ears. "Damn, you're off to a great start!"
+The sun glints off her wet, lower lip. Her hair is the golden brown you used to see in cigarette ads. I don't realize I'm staring until the other members of her table stare back at me. I quickly look down at the bubbles in my overpriced, champagne of bottle beer. I feel my face redden as the wind brings their titters of laughter to my ears. "Damn, you're off to a great start!"
 
 I'm racking my brains for some witty remark that will give me the courage to go over and meet her, but every time I gaze at her I immediately start fantasizing. God! The goddess of my dreams is sitting there not ten meters away, the wind gently lifting her soft hair off of the tan curves of her shoulders, laughing at me. Well, at least she knows I'm interested in her. At least I don't have a drool string flapping from my mouth.
 
