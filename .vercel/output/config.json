@@ -79,17 +79,6 @@
 			}
 		},
 		{
-			"src": "/second-post",
-			"dest": "/second-post/"
-		},
-		{
-			"src": "/second-post/",
-			"status": 308,
-			"headers": {
-				"Location": "/second-post"
-			}
-		},
-		{
 			"src": "/the-fence",
 			"dest": "/the-fence/"
 		},
@@ -149,9 +138,6 @@
 		},
 		"what-i-use.html": {
 			"path": "what-i-use"
-		},
-		"second-post.html": {
-			"path": "second-post"
 		},
 		"the-fence.html": {
 			"path": "the-fence"

@@ -46,14 +46,6 @@
 						</item>
 					
 						<item>
-							<title>Second</title>
-							<description>Second post.</description>
-							<link>https://vercel.app/second-post</link>
-							<guid isPermaLink="true">https://vercel.app/second-post</guid>
-							<pubDate>Sun, 16 Apr 2023 04:00:00 GMT</pubDate>
-						</item>
-					
-						<item>
 							<title>The Fence</title>
 							<description>A tale about managing anger with a hammer.</description>
 							<link>https://vercel.app/the-fence</link>
