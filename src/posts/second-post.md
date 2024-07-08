@@ -17,7 +17,7 @@ published: true
 Media inside the **static** folder is served from `/`.
 
 ![Svelte](favicon.png)
-
+![A test](knime-titanic-data-science/header.png)
 ## Counter
 
 <Counter />

@@ -1,17 +1,40 @@
 <script>
+	import {onMount} from 'svelte'
 	import { formatDate } from '$lib/utils'
 	import { randomInt } from 'd3-random'
 	import * as config from '$lib/config'
 
 	export let data
 	let len
+	let delays // a Set to store an array of delays
 	function randomArrayOfDelays() {
 		// data.posts.forEach(console.log(data.posts))
 		let d = Object.keys(data.posts) // change to an array so we can get the length to create an array of delays for the shimmer effect
 		len = d.length
-		console.log(d.length, randomInt(1, len)())
+		d.forEach( (e) => {
+		console.log(d.length, randomInt(1, d.length)())
+		})
+		const delays = new Set();
+		while(delays.size !== d.length) {
+  				delays.add(Math.floor(Math.random() * d.length) + 1);
+		}
+		console.log([...delays])
 	}
-	randomArrayOfDelays()
+	function getRandomNumber(min, max) {
+    	return Math.ceil(Math.random() * (max - min)) + min - 1;
+	}
+	function getDelay() {
+		let delay = delays(-1)
+		delays(-1).delete
+		console.log('returning delay', delay)
+		return delay
+	}
+	// usage:
+	// console.log(getRandomNumber(1, 10)); // Output: random number between 1 and 10
+
+	// onMount( () => {
+		randomArrayOfDelays()
+	// })
 </script>
 
 <svelte:head>
@@ -31,7 +54,7 @@
 					<rect pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
 					<rect pathLength="100" stroke-linecap="round" class="glow-line"></rect>
 				</svg>
-				<div class="shimmer" style="--delay: {-randomInt(1, len)() + 's'}"></div>
+				<div class="shimmer" style="--delay: {-randomInt(1, len) + 's'}"></div>
 			</li>
 		{/each}
 	</ul>
@@ -154,12 +177,7 @@
 	}
 	.gradient-glow {
 		position: relative;
-		/* width: 160px;
-		height: 60px; */
 		display: inline-block;
-		/* border-radius: 12px; */
-
-		/* margin: 20px; */
 	}
 
 	.gradient-glow li:before,
@@ -247,7 +265,7 @@
 	}
 
 	.glow-effect {
-		/* Kevin Powell */
+		/* from Kevin Powell */
 		--glow-line-color: #fff;
 		--glow-line-thickness: 2px;
 		--glow-line-length: 20px;
@@ -255,8 +273,9 @@
 		--glow-blur-size: 5px;
 		--glow-offset: 0px;
 		--animation-speed: 1200ms;
-		/* do not change, used for calculations */
-		--container-offset: 100px;
+		/* do not change, used for calculations; this value 
+		is used for sizing the svg viewport a bit larger than the container so the blur isn't clipped */
+		--container-offset: 10px;
 		position: relative;
 		/* position: absolute; */
 	}
@@ -266,8 +285,10 @@
 		position: absolute;
 		/* inset: calc(var(--container-offset) / -2); */
 		inset: 0;
-		width: calc(100% + var(--container-offset));
-		height: calc(100%);
+		/* width: calc(100% + var(--container-offset));
+		height: calc(100% + var(--container-offset)); */
+		width: 100%;
+		height: 100%;
 		opacity: 0;
 		outline: 3px solid blue;
 	}
