@@ -24,6 +24,17 @@
 			}
 		},
 		{
+			"src": "/syncthing",
+			"dest": "/syncthing/"
+		},
+		{
+			"src": "/syncthing/",
+			"status": 308,
+			"headers": {
+				"Location": "/syncthing"
+			}
+		},
+		{
 			"src": "/munger-quotes",
 			"dest": "/munger-quotes/"
 		},
@@ -123,6 +134,9 @@
 		},
 		"contact.html": {
 			"path": "contact"
+		},
+		"syncthing.html": {
+			"path": "syncthing"
 		},
 		"munger-quotes.html": {
 			"path": "munger-quotes"

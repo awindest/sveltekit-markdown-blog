@@ -6,6 +6,14 @@
 				<atom:link href="https://vercel.app/rss.xml" rel="self" type="application/rss+xml"/>
 				
 						<item>
+							<title>The Syncthing Story</title>
+							<description>How to synchronize your devices sans cloud. and for your educational enlightenment.</description>
+							<link>https://vercel.app/syncthing</link>
+							<guid isPermaLink="true">https://vercel.app/syncthing</guid>
+							<pubDate>Mon, 01 Jul 2024 00:00:00 GMT</pubDate>
+						</item>
+					
+						<item>
 							<title>Quotes from the great Charlie Munger (RIP)</title>
 							<description>Here are some nuggets of wisdom.</description>
 							<link>https://vercel.app/munger-quotes</link>
