@@ -3,6 +3,7 @@
 	import { formatDate } from '$lib/utils'
 	import { randomInt } from 'd3-random'
 	import * as config from '$lib/config'
+	import { CornerDownLeft } from 'lucide-svelte'
 
 	export let data
 	let len
@@ -35,6 +36,11 @@
 	// onMount( () => {
 		randomArrayOfDelays()
 	// })
+	function handleMouseEnter(event) {
+				let BBox = event.target.getBoundingClientRect()
+				// let el = document.querySelector(this)
+				console.log(BBox, event)
+			}
 </script>
 
 <svelte:head>
@@ -44,7 +50,7 @@
 <section>
 	<ul class="posts">
 		{#each data.posts as post}
-			<li class="post glow-effect">
+			<li class="post glow-effect" on:mouseenter={handleMouseEnter}>
 				<a href={post.slug} class="title"
 					>{post.title}
 					<p class="date">{formatDate(post.date)}</p>

@@ -1,6 +1,6 @@
 ---
 title: A Story about PocketHost.io
-description: An interesting story about Ben Allfree, the person behind pockethost.io, a free pocketbase (as of today) cloud service.
+description: An interesting story about Ben Allfree, the person behind pockethost.io, a ~~free~~ pocketbase (as of today) cloud service.
 date: '2023-12-10'
 categories:
   - pocketbase
@@ -9,7 +9,7 @@ published: true
 ---
 
 <p align="center">
-  <img width="100%" src="pockethost.avif" title="PocketHost.io logo from web site"/>
+  <img width="100%" src="pockethost.avif" title="PocketHost.io logo from web site" alt="PocketHost.io logo from web site"/>
 </p>
 
 ### Update

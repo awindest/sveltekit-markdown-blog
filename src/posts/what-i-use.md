@@ -32,6 +32,11 @@ published: true
 - [Docker](https://docker.com) to spin up various technologies like databases or kali
 - [Github](https://github.com) for storage, backup and version control
 - `git` from the command line as I don't trust myself with the GUI version
+- [`drizzle`](https://orm.drizzle.team/) for a Typescript ORM
+- [`turso`](https://turso.tech/) an SQLite Database as a service (free tier)
+- [`figma`](https://www.figma.com/) for some graphics work
+- [`blender`](https://www.blender.org/) for 3D models especially the dioramas, love dioramas
+- [`sketchfab`](https://sketchfab.com/feed) for 3d models
 - pending - Suprabase to store blog posts
 - pending - PocketHost.io to store blog posts in pocketbase but not able to get my account working
 
